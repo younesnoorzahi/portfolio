@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>وبلاگ من</title>
+  <link href="https://v1.fontapi.ir/css/Vazir" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Vazir, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #222;
+      padding: 2rem 1rem;
+      transition: 0.3s;
+    }
+
+    .dark {
+      background-color: #121212;
+      color: #eee;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .toggle-theme {
+      background: #00aaff;
+      color: white;
+      padding: 0.4rem 1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .posts {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .post {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+      transition: 0.3s;
+    }
+
+    .dark .post {
+      background: #1e1e1e;
+    }
+
+    .post h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #00aaff;
+    }
+
+    .post .date {
+      font-size: 0.8rem;
+      color: gray;
+      margin-bottom: 0.8rem;
+    }
+
+    .post p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .read-more {
+      color: #00aaff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    @media (min-width: 600px) {
+      .posts {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 900px) {
+      .posts {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>وبلاگ یونس</h1>
+    <button class="toggle-theme" onclick="toggleTheme()">🌓 حالت شب/روز</button>
+  </header>
+
+  <main class="posts">
+    <div class="post">
+      <h2>معرفی Git و مزایای آن</h2>
+      <div class="date">۵ مرداد ۱۴۰۴</div>
+      <p>در این مقاله با Git آشنا می‌شویم، یک سیستم کنترل نسخه محبوب بین برنامه‌نویسان...</p>
+      <a href="https://github.com/younesnoorzahi/git-commands" class="read-more">ادامه مطلب <i
+          class="bi bi-arrow-left"></i></a>
+    </div>
+
+    <div class="post">
+      <h2>OpenCV در پایتون</h2>
+      <div class="date">۵ تیر ۱۴۰۴</div>
+      <p>OpenCV-Python یک کتابخانه پر کاربرد در زمینه پردازش تصویر و بینایی کامپیوتر است...</p>
+      <a href="https://sokanacademy.com/plus/younes_nz/opencv-python" class="read-more">ادامه مطلب <i
+          class="bi bi-arrow-left"></i></a>
+    </div>
+
+    <div class="post">
+      <h2>TensorFlow در پایتون</h2>
+      <div class="date">۹ تیر ۱۴۰۴</div>
+      <p>TensorFlow یک چارچوب یادگیری ماشین (Machine Learning) باز کد است...</p>
+      <a href="https://sokanacademy.com/plus/younes_nz/tensorflow-in-python" class="read-more">ادامه مطلب <i
+          class="bi bi-arrow-left"></i></a>
+    </div>
+
+    <div class="post">
+      <h2>پایتون و اتصال به سخت افزار</h2>
+      <div class="date">۹ تیر ۱۴۰۴</div>
+      <p>پایتون یکی از زبان‌های برنامه‌نویسی پرکاربرد است که به دلیل سادگی سینتکس و کتابخانه‌های گسترده‌اش...</p>
+      <a href="https://sokanacademy.com/plus/younes_nz/%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86-%D9%88-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D8%A8%D9%87-%D8%B3%D8%AE%D8%AA-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1-%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C%DB%8C-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86-%D8%A8%D9%87-%D8%AF%D8%B3%D8%AA%DA%AF%D8%A7%D9%87%D9%87%D8%A7%DB%8C-%D9%81%DB%8C%D8%B2%DB%8C%DA%A9%DB%8C"
+        class="read-more">ادامه مطلب <i class="bi bi-arrow-left"></i></a>
+    </div>
+
+    <div class="post">
+      <h2>چرا برنامه‌نویسی وب؟</h2>
+      <div class="date">۹ تیر ۱۴۰۴</div>
+      <p>در دنیایی که فناوری هر روز پیشرفت می‌کند، برنامه‌نویسی وب همچنان یکی از پایه‌های اصلی...</p>
+      <a href="https://sokanacademy.com/plus/younes_nz/%DA%86%D8%B1%D8%A7-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%D9%88%D8%A8-%D9%87%D9%86%D9%88%D8%B2-%D8%A2%DB%8C%D9%86%D8%AF%D9%87%D8%AF%D8%A7%D8%B1-%D8%A7%D8%B3%D8%AA"
+        class="read-more">ادامه مطلب <i class="bi bi-arrow-left"></i></a>
+    </div>
+
+    <div class="post">
+      <h2>Routing در لاراول</h2>
+      <div class="date">‌۱۹ تیر ۱۴۰۴</div>
+      <p>در لاراول، Routing یکی از بخش‌های حیاتی است که مسیرهای مختلف درخواست‌های وب را مدیریت می‌کند...</p>
+      <a href="https://github.com/younesnoorzahi/Routing-in-Laravel"
+        class="read-more">ادامه مطلب <i class="bi bi-arrow-left"></i></a>
+    </div>
+  </main>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+
+</html>
