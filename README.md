@@ -16,7 +16,7 @@
 
 🌐 برای مشاهده نسخه زنده این پروژه، روی لینک زیر کلیک کنید:
 
-[نمایش دمو](https://your-username.github.io/profile/)
+[نمایش دمو](https://younesnoorzahi.github.io/profile/)
 
 ## 🛠️ تکنولوژی‌ها
 
