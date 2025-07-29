@@ -16,7 +16,7 @@
 
 🌐 برای مشاهده نسخه زنده این پروژه، روی لینک زیر کلیک کنید:
 
-[نمایش دمو](https://your-username.github.io/your-repo-name/)
+[نمایش دمو](https://your-username.github.io/profile/)
 
 ## 🛠️ تکنولوژی‌ها
 
